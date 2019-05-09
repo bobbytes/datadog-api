@@ -44,7 +44,7 @@
     ]
   },
   "sonar": {
-    "projectKey": "",
+    "projectKey": "DaNautilus_datadog-api",
     "sources": "src",
     "reportPaths": "test/coverage/lcov.info"
   },
