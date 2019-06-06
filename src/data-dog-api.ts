@@ -28,9 +28,7 @@ export class DatadogApi {
       metric: metricKey, type, interval, tags, host, points: [[timeStamp, value]],
     };
 
-    const metricsWithAdditionalTags = this.addConfigTagsToMetrics([mappedMetric]);
-
-    return this.postMetrics(metricsWithAdditionalTags);
+    return this.postMetrics([mappedMetric]);
   }
 
   public postMetrics(metrics: IMetric[]): Promise<any> {
@@ -40,6 +38,6 @@ export class DatadogApi {
   }
 
   private addConfigTagsToMetrics(metrics: IMetric[]): IMetric[] {
-    return metrics.map(metric => ({ ...metric, tags: [...metric.tags || [], ...this.config.tags || []] }));
+    return metrics.map(metric => ({ ...metric, tags: [...(metric.tags || []), ...(this.config.tags || [])] }));
   }
 }
