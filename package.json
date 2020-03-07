@@ -57,7 +57,7 @@
   "repository": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^24.0.13",
+    "@types/jest": "^25.1.4",
     "@types/request": "^2.48.1",
     "chalk": "^2.4.2",
     "dts-bundle": "^0.7.3",
