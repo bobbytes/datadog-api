@@ -58,7 +58,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.13",
-    "@types/request": "^2.48.1",
+    "@types/request": "2.48.4",
     "chalk": "^2.4.2",
     "dts-bundle": "^0.7.3",
     "ini": "^1.3.5",
